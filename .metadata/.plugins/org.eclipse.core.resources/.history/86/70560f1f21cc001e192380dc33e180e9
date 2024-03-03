@@ -1,0 +1,25 @@
+package application;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+      LocalDate d04 = LocalDate.parse("2024-07-20");
+      Instant d05 = Instant.parse("2024-02-20T01:30:26Z");
+      LocalDate r1 = LocalDate.ofInstant(d05, ZoneId.systemDefault());
+      LocalDate r2 = LocalDate.ofInstant(d05, ZoneId.of("Portugal"));
+      System.out.println("r1 = " + r1);
+      System.out.println("r2 = " + r2);
+ 	
+		sc.close(); 
+ }
+}

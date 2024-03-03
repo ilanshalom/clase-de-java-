@@ -1,0 +1,20 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   
+       String  nome = "Ilan";
+       int idade = 29;
+       double renda = 4000.0;
+       System.out.printf("%s tem %d anos e ganha R$ %.2f Reais%n", nome, idade, renda);
+    int x ;
+    double y;
+    x = 10;
+    y = 2 * x;
+    System.out.println(x);
+    System.out.println(y);
+     
+	}
+
+}

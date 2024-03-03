@@ -1,0 +1,23 @@
+package application;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+      LocalDate d04 = LocalDate.parse("2024-07-20");
+     
+      for (String s : ZoneId.getAvailableZoneIds()) {
+    	  System.out.println(s);
+      }
+ 	
+		sc.close(); 
+ }
+}

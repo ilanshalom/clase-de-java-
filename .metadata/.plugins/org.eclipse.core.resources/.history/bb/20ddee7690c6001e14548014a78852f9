@@ -1,0 +1,28 @@
+package application;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		LocalDate d04 = LocalDate.parse("2024-02-06");
+		LocalDateTime d05 = LocalDateTime.parse("2024-02-06T12:37:36");
+		Instant d06 = Instant.parse("2024-02-06T12:37:36Z");
+       DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+       
+       System.out.println("d04 = " + d04.format(fmt1 ));
+       
+       
+		
+		sc.close(); 
+ }
+}

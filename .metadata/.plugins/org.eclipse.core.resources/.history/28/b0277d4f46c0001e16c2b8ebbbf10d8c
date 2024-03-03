@@ -1,0 +1,34 @@
+package application;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+      List<String> frutas = new ArrayList<>();
+		frutas.add("maça");
+		frutas.add("pera");
+		frutas.add("maracuya");
+		frutas.add("banana");
+		frutas.add("limão");
+		frutas.add("abacaxi");
+		frutas.add("morango");
+		frutas.add(2,"manga");
+		System.out.println(frutas.size());
+		for (String x : frutas) {
+			System.out.println(x);
+		}
+		System.out.println("--------------------------");
+		frutas.removeIf(x -> x.charAt(0)== 'm');
+		for (String x : frutas) {
+			System.out.println(x);
+       sc.close();
+	}
+
+}
+}
